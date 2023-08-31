@@ -1,20 +1,16 @@
-"use client";
 import React from "react";
-import useThemeSwitcher from "../../components/hooks/useThemeSwitcher";
+import CoverVideo from "../../components/coverVideo";
+import Logo from "../../components/logo";
 
 function HomeContainer() {
-  const [mode, setMode] = useThemeSwitcher("dark");
-  console.log(mode);
   return (
-    <div>
-      HomeContainer
-      <button
-        onClick={() => setMode(mode === "light" ? "dark" : "light")}
-        className='bg-red-300'
-      >
-        Button {mode}
-      </button>
-    </div>
+    <>
+      <div data-scroll-section className="relative h-[200vh] overflow-hidden">
+        <CoverVideo />
+        <Logo />
+        <h1>Navbar</h1>
+      </div>
+    </>
   );
 }
 
