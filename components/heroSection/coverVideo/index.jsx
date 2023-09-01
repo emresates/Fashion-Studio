@@ -76,7 +76,7 @@ function CoverVideo() {
           data-scroll
           data-scroll-delay="0.04"
           data-scroll-speed="2"
-          className="mt-6 text-lg xl:text-2xl text-center"
+          className="mt-6 text-center text-lg xl:text-2xl"
         >
           Inspire. Create. Believe
         </motion.h2>

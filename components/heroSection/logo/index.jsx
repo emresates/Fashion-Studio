@@ -6,11 +6,11 @@ import { pathVariants, textVariants } from "../../../motionVariants";
 function Logo() {
   return (
     <div className="absolute left-4 top-4 z-[5] w-full text-white">
-      <Link href="/" className="flex items-end">
+      <Link href="/" className="flex w-48 items-end">
         <svg
-          className="h-auto w-10 md:w-16 overflow-visible stroke-white stroke-1"
+          className="h-auto w-10 overflow-visible stroke-white stroke-1 md:w-16"
           xmlns="http://www.w3.org/2000/svg"
-          enable-background="new 0 0 24 24"
+          enableBackground="new 0 0 24 24"
           height="48px"
           viewBox="0 0 24 24"
           width="48px"

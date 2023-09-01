@@ -18,6 +18,11 @@ module.exports = {
         md: "2px 4px 8px var(--tw-shadow-color)",
         lg: "4px 8px 16px var(--tw-shadow-color)",
       },
+      fontFamily: {
+        sedgwick: ["Sedgwick Ave Display", "cursive"],
+        slab: ["Josefin Slab", "sans"],
+        kaushan: ["Kaushan Script", "cursive"],
+      },
     },
   },
   plugins: [
@@ -28,7 +33,7 @@ module.exports = {
             textShadow: value,
           }),
         },
-        { values: theme("textShadow") }
+        { values: theme("textShadow") },
       );
     }),
   ],

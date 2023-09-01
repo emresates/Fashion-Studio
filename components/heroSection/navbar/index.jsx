@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import DarkModeToggle from "../../darkModeToggle";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -59,6 +60,7 @@ function Navbar() {
           </Link>
         </motion.div>
       </motion.div>
+      <DarkModeToggle />
     </motion.nav>
   );
 }

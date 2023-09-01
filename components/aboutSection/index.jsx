@@ -4,9 +4,22 @@ function AboutSection() {
     <>
       <div
         data-scroll-section
-        className="relative min-h-screen overflow-hidden"
+        className="relative min-h-screen w-full overflow-hidden"
       >
-        About
+        <div
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-direction="horizontal"
+          className="font-kaushan absolute left-20 top-4 z-[5] text-9xl font-light"
+        >
+          About Us
+        </div>
+        <div>
+            text
+        </div>
+        <div>
+            images
+        </div>
       </div>
     </>
   );
