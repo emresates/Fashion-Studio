@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { pathVariants, textVariants } from "../../motionVariants";
+import { pathVariants, textVariants } from "../../../motionVariants";
 
 function Logo() {
   return (

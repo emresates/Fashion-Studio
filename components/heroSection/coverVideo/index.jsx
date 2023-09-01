@@ -1,7 +1,7 @@
 import React from "react";
-import HeroVideo from "../../public/hero.mp4";
+import HeroVideo from "../../../public/hero.mp4";
 import { motion } from "framer-motion";
-import { containerVariants, itemVariants } from "../../motionVariants";
+import { containerVariants, itemVariants } from "../../../motionVariants";
 
 function CoverVideo() {
   return (

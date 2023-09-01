@@ -1,16 +1,12 @@
 import React from "react";
-import CoverVideo from "../../components/coverVideo";
-import Logo from "../../components/logo";
-import Navbar from "../../components/navbar";
+import HeroSection from "../../components/heroSection";
+import AboutSection from "../../components/aboutSection";
 
 function HomeContainer() {
   return (
     <>
-      <div data-scroll-section className="relative h-[200vh] overflow-hidden">
-        <CoverVideo />
-        <Logo />
-        <Navbar />
-      </div>
+      <HeroSection />
+      <AboutSection />
     </>
   );
 }
