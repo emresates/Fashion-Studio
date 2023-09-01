@@ -4,6 +4,7 @@ import HomeContainer from "../../containers/HomeContainer";
 import { useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { AnimatePresence } from "framer-motion";
+import ScrollTriggerProxy from "../../components/hooks/scrollTriggerProxy";
 
 export default function App() {
   const containerRef = useRef(null);
@@ -23,8 +24,9 @@ export default function App() {
       }
       containerRef={containerRef}
     >
+      <ScrollTriggerProxy />
       <AnimatePresence>
-        <main data-scroll-container ref={containerRef}>
+        <main className="App" data-scroll-container ref={containerRef}>
           <HomeContainer />
         </main>
       </AnimatePresence>

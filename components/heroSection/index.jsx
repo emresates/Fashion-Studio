@@ -7,7 +7,6 @@ function HeroSection() {
   return (
     <>
       <div
-        data-scroll-section
         className="relative min-h-screen overflow-hidden"
       >
         <CoverVideo />

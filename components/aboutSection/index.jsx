@@ -4,17 +4,16 @@ function AboutSection() {
     <>
       <div
         id="fixed-target"
-        data-scroll-section
         className="relative mx-auto flex min-h-screen w-4/5"
       >
-        <div
+        <h1
           data-scroll
           data-scroll-speed="-2"
           data-scroll-direction="horizontal"
           className="font-kaushan absolute left-20 top-4 z-[5] text-9xl font-light"
         >
           About Us
-        </div>
+        </h1>
         <div
           data-scroll
           data-scroll-sticky
