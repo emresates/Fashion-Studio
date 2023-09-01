@@ -8,7 +8,7 @@ function Logo() {
     <div className="absolute left-4 top-4 z-[5] w-full text-white">
       <Link href="/" className="flex items-end">
         <svg
-          className="h-auto w-16 overflow-visible stroke-white stroke-1"
+          className="h-auto w-10 md:w-16 overflow-visible stroke-white stroke-1"
           xmlns="http://www.w3.org/2000/svg"
           enable-background="new 0 0 24 24"
           height="48px"
@@ -29,7 +29,7 @@ function Logo() {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          className="text-lg"
+          className="text-md md:text-lg"
         >
           Lumina Studio
         </motion.h1>

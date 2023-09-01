@@ -21,7 +21,7 @@ function CoverVideo() {
         animate="visible"
         className="absolute bottom-0 left-0 right-0 top-0 z-[5] flex flex-col items-center justify-center text-white shadow-red-300 text-shadow-md"
       >
-        <div className="flex flex-row text-9xl">
+        <div className="flex flex-row text-4xl md:text-9xl">
           <motion.h1
             variants={itemVariants}
             data-scroll
@@ -76,7 +76,7 @@ function CoverVideo() {
           data-scroll
           data-scroll-delay="0.04"
           data-scroll-speed="2"
-          className="mt-6 text-2xl"
+          className="mt-6 text-lg xl:text-2xl text-center"
         >
           Inspire. Create. Believe
         </motion.h2>
