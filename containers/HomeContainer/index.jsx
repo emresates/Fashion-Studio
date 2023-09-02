@@ -8,14 +8,14 @@ import Footer from "../../components/footer";
 
 function HomeContainer() {
   return (
-    <>
+    <div className="relative">
       <HeroSection />
       <AboutSection />
       <ShopSection />
       <Banners />
       <NewArrivals />
       <Footer />
-    </>
+    </div>
   );
 }
 

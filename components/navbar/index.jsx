@@ -1,9 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import DarkModeToggle from "../../darkModeToggle";
+import DarkModeToggle from "../darkModeToggle";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 function Navbar() {
@@ -21,12 +20,24 @@ function Navbar() {
     });
   };
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+
+    window.addEventListener("scroll", updatePosition);
+    updatePosition();
+
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
+
   return (
     <motion.nav
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 2, delay: 2 }}
-      className={`absolute z-50 h-10 w-full text-white transition-all ease-in md:h-20 ${
+      className={`fixed z-50 h-10 w-full text-white transition-all ease-in md:h-20 ${
         clicked ? "top-0 " : "-top-10 md:-top-20"
       }`}
     >
@@ -72,8 +83,8 @@ function Navbar() {
             New Arrival
           </span>
         </motion.div>
+        <DarkModeToggle />
       </motion.div>
-      <DarkModeToggle />
     </motion.nav>
   );
 }
