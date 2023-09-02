@@ -11,10 +11,10 @@ const Product = ({ img, title = "" }) => {
       whileInView={{ filter: "grayscale(0%)" }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false, amount: "all" }}
-      className="mr-24 inline-block w-80"
+      className="mr-24 inline-block w-60 md:w-80"
     >
       <img className="h-auto w-full cursor-pointer" src={img} alt={title} />
-      <h1 className="font-sedgwick mt-3 text-center text-3xl font-medium tracking-widest">
+      <h1 className="mt-3 text-center font-sedgwick text-3xl font-medium tracking-widest">
         {title}
       </h1>
     </motion.div>
@@ -80,12 +80,12 @@ function ShopSection() {
       <h1
         data-scroll
         data-scroll-speed="-1"
-        className="font-kaushan absolute left-20 top-4 z-10 text-9xl font-light text-white shadow-black text-shadow-md dark:text-black dark:shadow-white"
+        className="absolute right-20 top-4 z-10 font-kaushan text-4xl font-light text-white shadow-black text-shadow-md dark:text-black dark:shadow-white md:left-20 xl:text-9xl"
       >
         New Collection
       </h1>
 
-      <div className="fixed left-0 z-[5] flex min-h-screen w-2/5 items-center justify-center bg-gray-800 dark:bg-gray-300">
+      <div className="fixed left-0 z-[5] flex min-h-screen w-1/2 items-center justify-center bg-gray-800 dark:bg-gray-300 md:w-2/5">
         <p className="w-4/5 text-lg font-thin text-white dark:text-black">
           Elevate your style with our brand-new collection that just arrived.
           We've carefully curated this selection of fashion-forward pieces to
@@ -93,13 +93,15 @@ function ShopSection() {
           elegant evening wear, our new collection has it all.
           <br />
           <br />
-          Explore the season's hottest trends, from vibrant prints and bold
-          colors to timeless classics with a modern twist. Our new arrivals are
-          designed to inspire and empower your unique fashion journey. Whether
-          you're updating your wardrobe or searching for that perfect statement
-          piece, our latest collection has something to suit every style and
-          preference. Stay ahead of the fashion curve and shop the freshest
-          looks of the season today.
+          <p className="hidden sm:block">
+            Explore the season's hottest trends, from vibrant prints and bold
+            colors to timeless classics with a modern twist. Our new arrivals
+            are designed to inspire and empower your unique fashion journey.
+            Whether you're updating your wardrobe or searching for that perfect
+            statement piece, our latest collection has something to suit every
+            style and preference. Stay ahead of the fashion curve and shop the
+            freshest looks of the season today.
+          </p>
         </p>
       </div>
 
