@@ -74,6 +74,7 @@ function ShopSection() {
 
   return (
     <section
+      id="shop"
       ref={ref}
       className="relative mx-auto my-0 flex h-auto min-h-screen w-full items-start justify-start overflow-hidden"
     >
@@ -86,7 +87,7 @@ function ShopSection() {
       </h1>
 
       <div className="fixed left-0 z-[5] flex min-h-screen w-1/2 items-center justify-center bg-gray-800 dark:bg-gray-300 md:w-2/5">
-        <p className="w-4/5 text-sm xl:text-lg font-thin text-white dark:text-black">
+        <p className="w-4/5 text-sm font-thin text-white dark:text-black xl:text-lg">
           Elevate your style with our brand-new collection that just arrived.
           We've carefully curated this selection of fashion-forward pieces to
           keep you on-trend and ready for any occasion. From casual chic to

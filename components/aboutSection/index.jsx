@@ -4,7 +4,7 @@ function AboutSection() {
     <>
       <section
         id="fixed-target"
-        className="relative mx-auto mb-6 flex min-h-screen w-full overflow-hidden xl:overflow-visible px-5 md:px-20 xl:mb-0 xl:w-4/5 xl:px-0"
+        className="relative mx-auto mb-6 flex min-h-screen w-full overflow-hidden px-5 md:px-20 xl:mb-0 xl:w-4/5 xl:overflow-visible xl:px-0"
       >
         <h1
           data-scroll

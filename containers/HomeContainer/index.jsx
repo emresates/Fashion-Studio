@@ -4,6 +4,7 @@ import AboutSection from "../../components/aboutSection";
 import ShopSection from "../../components/shopSection";
 import Banners from "../../components/banners";
 import NewArrivals from "../../components/newArrivals";
+import Footer from "../../components/footer";
 
 function HomeContainer() {
   return (
@@ -13,6 +14,7 @@ function HomeContainer() {
       <ShopSection />
       <Banners />
       <NewArrivals />
+      <Footer />
     </>
   );
 }

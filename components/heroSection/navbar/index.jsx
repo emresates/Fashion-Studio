@@ -4,9 +4,22 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import DarkModeToggle from "../../darkModeToggle";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
+
+  const { scroll } = useLocomotiveScroll();
+
+  const handleScroll = (id) => {
+    let elem = document.querySelector(id);
+
+    scroll.scrollTo(elem, {
+      offset: "-100",
+      duration: "2000",
+      easing: [0.25, 0.0, 0.35, 1.0],
+    });
+  };
 
   return (
     <motion.nav
@@ -34,30 +47,30 @@ function Navbar() {
           Menu
         </div>
         <motion.div className="flex w-full items-center justify-around text-sm uppercase sm:text-xl">
-          <Link
+          <span
             className="transition-all hover:scale-110 active:scale-90"
-            href=""
+            onClick={() => handleScroll("#hero")}
           >
             Home
-          </Link>
-          <Link
+          </span>
+          <span
             className="transition-all hover:scale-110 active:scale-90"
-            href=""
+            onClick={() => handleScroll("#fixed-target")}
           >
             About
-          </Link>
-          <Link
+          </span>
+          <span
             className="transition-all hover:scale-110 active:scale-90"
-            href=""
+            onClick={() => handleScroll("#shop")}
           >
             Shop
-          </Link>
-          <Link
+          </span>
+          <span
             className="transition-all hover:scale-110 active:scale-90"
-            href=""
+            onClick={() => handleScroll("#newarrival")}
           >
             New Arrival
-          </Link>
+          </span>
         </motion.div>
       </motion.div>
       <DarkModeToggle />

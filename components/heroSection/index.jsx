@@ -6,9 +6,7 @@ import Navbar from "./navbar";
 function HeroSection() {
   return (
     <>
-      <div
-        className="relative min-h-screen overflow-hidden"
-      >
+      <div id="hero" className="relative min-h-screen overflow-hidden">
         <CoverVideo />
         <Logo />
         <Navbar />

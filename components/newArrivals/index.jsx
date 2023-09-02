@@ -34,7 +34,6 @@ function NewArrivals() {
           scroller: ".App",
           scrub: 1,
           pin: true,
-          markers: true,
         },
         ease: "none",
       });
@@ -53,7 +52,6 @@ function NewArrivals() {
             end: "bottom top",
             scroller: ".App",
             scrub: 1,
-            markers: true,
           },
         },
       );
@@ -70,15 +68,16 @@ function NewArrivals() {
   return (
     <section
       ref={refArrival}
+      id="newarrival"
       className="relative mx-auto flex min-h-screen w-full items-center justify-center"
     >
-      <div className="shadow-xxlLight dark:shadow-xxlDark absolute left-1/2 top-1/2 z-50 h-5/6 w-1/3 -translate-x-1/2 -translate-y-1/2 border-4 border-black dark:border-white" />
+      <div className="shadow-xxlLight dark:shadow-xxlDark absolute left-1/2 top-1/2 z-10 h-5/6 w-1/3 -translate-x-1/2 -translate-y-1/2 border-4 border-black dark:border-white" />
 
       <h1
         data-scroll
         data-scroll-speed="-1"
         data-scroll-direction="horizontal"
-        className="absolute z-[5] text-center font-kaushan text-6xl font-light shadow-black text-shadow-sm md:text-7xl xl:right-20 xl:top-4"
+        className="absolute z-50 text-center font-kaushan text-6xl font-light shadow-black text-shadow-sm md:text-8xl xl:right-20 xl:top-4"
       >
         New Arrivals
       </h1>
