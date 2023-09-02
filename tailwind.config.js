@@ -23,6 +23,10 @@ module.exports = {
         slab: ["Josefin Slab", "sans"],
         kaushan: ["Kaushan Script", "cursive"],
       },
+      boxShadow: {
+        xxlLight: "0 0 0 5vw white",
+        xxlDark: "0 0 0 5vw black",
+      },
     },
   },
   plugins: [

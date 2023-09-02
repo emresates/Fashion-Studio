@@ -86,14 +86,14 @@ function ShopSection() {
       </h1>
 
       <div className="fixed left-0 z-[5] flex min-h-screen w-1/2 items-center justify-center bg-gray-800 dark:bg-gray-300 md:w-2/5">
-        <p className="w-4/5 text-lg font-thin text-white dark:text-black">
+        <p className="w-4/5 text-sm xl:text-lg font-thin text-white dark:text-black">
           Elevate your style with our brand-new collection that just arrived.
           We've carefully curated this selection of fashion-forward pieces to
           keep you on-trend and ready for any occasion. From casual chic to
           elegant evening wear, our new collection has it all.
           <br />
           <br />
-          <p className="hidden sm:block">
+          <span className="hidden sm:block">
             Explore the season's hottest trends, from vibrant prints and bold
             colors to timeless classics with a modern twist. Our new arrivals
             are designed to inspire and empower your unique fashion journey.
@@ -101,7 +101,7 @@ function ShopSection() {
             statement piece, our latest collection has something to suit every
             style and preference. Stay ahead of the fashion curve and shop the
             freshest looks of the season today.
-          </p>
+          </span>
         </p>
       </div>
 
@@ -110,14 +110,14 @@ function ShopSection() {
         ref={horizontalRef}
         className="absolute left-[40%] flex min-h-screen items-center justify-start pl-[30%]"
       >
-        <Product img="./newarrival/img1.webp" title="Street Fashion" />
-        <Product img="./newarrival/img2.webp" title="Casual" />
-        <Product img="./newarrival/img3.webp" title="Compatible" />
-        <Product img="./newarrival/img5.webp" title="Relaxed" />
-        <Product img="./newarrival/img6.webp" title="Elegant" />
-        <Product img="./newarrival/img7.webp" title="Harmonious" />
-        <Product img="./newarrival/img8.webp" title="Western" />
-        <Product img="./newarrival/img9.webp" title="Coherent" />
+        <Product img="./shop/img1.webp" title="Street Fashion" />
+        <Product img="./shop/img2.webp" title="Casual" />
+        <Product img="./shop/img3.webp" title="Compatible" />
+        <Product img="./shop/img5.webp" title="Relaxed" />
+        <Product img="./shop/img6.webp" title="Elegant" />
+        <Product img="./shop/img7.webp" title="Harmonious" />
+        <Product img="./shop/img8.webp" title="Western" />
+        <Product img="./shop/img9.webp" title="Coherent" />
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import HeroSection from "../../components/heroSection";
 import AboutSection from "../../components/aboutSection";
 import ShopSection from "../../components/shopSection";
 import Banners from "../../components/banners";
+import NewArrivals from "../../components/newArrivals";
 
 function HomeContainer() {
   return (
@@ -11,6 +12,7 @@ function HomeContainer() {
       <AboutSection />
       <ShopSection />
       <Banners />
+      <NewArrivals />
     </>
   );
 }
