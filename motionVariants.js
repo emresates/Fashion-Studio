@@ -9,6 +9,23 @@ export const pathVariants = {
 
     transition: {
       duration: 2,
+      delay: 3,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export const pathVariantLoader = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+
+    transition: {
+      duration: 2,
       ease: "easeInOut",
     },
   },
@@ -25,7 +42,22 @@ export const textVariants = {
 
     transition: {
       duration: 2,
-      delay: 2,
+      delay: 5,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export const textVariantLoader = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+
+    transition: {
+      duration: 2,
+      yoyo: Infinity,
       ease: "easeInOut",
     },
   },
@@ -39,7 +71,7 @@ export const containerVariants = {
     opacity: 1,
 
     transition: {
-      delayChildren: 1,
+      delayChildren: 5,
       staggerChildren: 0.3,
     },
   },

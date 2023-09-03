@@ -36,7 +36,7 @@ function Navbar() {
     <motion.nav
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
-      transition={{ duration: 2, delay: 2 }}
+      transition={{ duration: 2, delay: 5 }}
       className={`fixed z-50 h-10 w-full text-white transition-all ease-in md:h-20 ${
         clicked ? "top-0 " : "-top-10 md:-top-20"
       }`}

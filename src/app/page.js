@@ -1,13 +1,21 @@
 "use client";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import HomeContainer from "../../containers/HomeContainer";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { AnimatePresence } from "framer-motion";
 import ScrollTriggerProxy from "../../components/hooks/scrollTriggerProxy";
+import Loader from "../../components/loader";
 
 export default function App() {
   const containerRef = useRef(null);
+
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 3000);
+  }, []);
 
   return (
     <LocomotiveScrollProvider
@@ -24,6 +32,7 @@ export default function App() {
       }
       containerRef={containerRef}
     >
+      <AnimatePresence>{loaded ? null : <Loader />}</AnimatePresence>
       <ScrollTriggerProxy />
       <AnimatePresence>
         <main className="App" data-scroll-container ref={containerRef}>
