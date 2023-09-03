@@ -61,9 +61,8 @@ function Footer() {
           New Arrival
         </span>
       </motion.div>
-      
+
       <div className="my-4 flex w-full flex-col items-center justify-between px-4 text-lg md:w-3/5 md:flex-row md:text-2xl">
-        
         <span
           data-scroll
           data-scroll-speed="2"
@@ -71,7 +70,7 @@ function Footer() {
         >
           &copy; {new Date().getFullYear()}. All Rights Reserved.
         </span>
-        
+
         <span
           data-scroll
           data-scroll-speed="-2"

@@ -42,7 +42,7 @@ function AboutSection() {
           <img
             src="./img2.webp"
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="3"
             alt="fashion"
             className="absolute bottom-1/3 right-2/3 w-2/5 md:bottom-[10%] xl:right-[95%]"
           />
