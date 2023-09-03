@@ -34,7 +34,7 @@ function Footer() {
         transition={{
           duration: 1,
         }}
-        className="mt-16 flex w-3/5 flex-wrap items-center justify-between border-b-2 border-t-2 p-10 font-slab text-2xl font-bold uppercase"
+        className="mt-16 flex w-4/5 flex-col flex-wrap items-center justify-between gap-y-2 border-b-2 border-t-2 p-10 text-center font-slab text-2xl font-bold uppercase md:w-3/5 md:flex-row"
       >
         <span
           className="cursor-pointer transition-all hover:scale-110 active:scale-95"
@@ -61,7 +61,9 @@ function Footer() {
           New Arrival
         </span>
       </motion.div>
-      <div className="my-4 flex w-3/5 items-center justify-between px-4 text-2xl">
+      
+      <div className="my-4 flex w-full flex-col items-center justify-between px-4 text-lg md:w-3/5 md:flex-row md:text-2xl">
+        
         <span
           data-scroll
           data-scroll-speed="2"
@@ -69,6 +71,7 @@ function Footer() {
         >
           &copy; {new Date().getFullYear()}. All Rights Reserved.
         </span>
+        
         <span
           data-scroll
           data-scroll-speed="-2"

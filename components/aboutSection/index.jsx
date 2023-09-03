@@ -4,7 +4,7 @@ function AboutSection() {
     <>
       <section
         id="fixed-target"
-        className="relative mx-auto mb-6 flex min-h-screen w-full overflow-hidden px-5 md:px-20 xl:mb-0 xl:w-4/5 xl:overflow-visible xl:px-0"
+        className="relative mx-auto flex min-h-screen w-full overflow-hidden xl:w-5/6 xl:overflow-visible xl:px-0"
       >
         <h1
           data-scroll
@@ -18,7 +18,7 @@ function AboutSection() {
           data-scroll
           data-scroll-sticky
           data-scroll-target="#fixed-target"
-          className="relative z-[5] mx-auto mt-20 w-5/6 text-lg font-light backdrop-blur-sm md:mt-40 md:text-xl xl:w-1/2 xl:text-2xl xl:backdrop-blur-0"
+          className="text-md relative z-[5] mx-auto mt-14 w-full rounded-xl px-3 font-light backdrop-blur-sm md:mt-40 md:text-lg xl:w-1/2 xl:rounded-none xl:text-2xl xl:backdrop-blur-0"
         >
           <br />
           We're a passionate team with a love for fashion. Our goal is simple:
@@ -33,19 +33,18 @@ function AboutSection() {
           bring you the latest trends without breaking the bank.
           <br />
           <br />
-          Our mission is to celebrate the uniqueness of each individual's style.
           We believe that fashion is a form of self-expression and empowerment.
           We are here to inspire and provide a platform for you to explore and
           embrace your personal style journey.
         </div>
-        <div className="absolute top-0 mx-auto w-4/5 xl:relative xl:w-1/2">
-          <img src="./img1.webp" alt="fashion" />
+        <div className="absolute mx-auto flex w-full items-center justify-center xl:relative xl:w-1/2">
+          <img src="./img1.webp" className="object-cover" alt="fashion" />
           <img
             src="./img2.webp"
             data-scroll
             data-scroll-speed="5"
             alt="fashion"
-            className="absolute bottom-[10%] right-2/3 w-2/5 xl:right-[95%]"
+            className="absolute bottom-1/3 right-2/3 w-2/5 md:bottom-[10%] xl:right-[95%]"
           />
           <img
             src="./img3.webp"

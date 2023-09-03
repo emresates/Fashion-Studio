@@ -71,20 +71,20 @@ function NewArrivals() {
       id="newarrival"
       className="relative mx-auto flex min-h-screen w-full items-center justify-center"
     >
-      <div className="shadow-xxlLight dark:shadow-xxlDark absolute left-1/2 top-1/2 z-10 h-5/6 w-1/3 -translate-x-1/2 -translate-y-1/2 border-4 border-black dark:border-white" />
+      <div className="absolute left-1/2 top-1/2 z-10 h-[95%] w-2/3 -translate-x-1/2 -translate-y-1/2 border-4 border-black shadow-xxlLight dark:border-white dark:shadow-xxlDark xl:h-5/6 xl:w-1/3" />
 
       <h1
         data-scroll
         data-scroll-speed="-1"
         data-scroll-direction="horizontal"
-        className="absolute z-50 text-center font-kaushan text-6xl font-light shadow-black text-shadow-sm md:text-8xl xl:right-20 xl:top-4"
+        className="absolute right-20 top-4 z-50 font-kaushan text-6xl font-light shadow-black text-shadow-sm md:text-8xl"
       >
         New Arrivals
       </h1>
 
       <div
         ref={ScrollingRef}
-        className="absolute left-1/2 top-10 flex h-auto w-1/4 -translate-x-1/2 flex-col items-center justify-center"
+        className="absolute left-1/2 top-10 flex h-auto w-2/4 -translate-x-1/2 flex-col items-center justify-center xl:w-1/4"
       >
         <Product img="./newarrival/img1.webp" title="Sun Glasses" />
         <Product img="./newarrival/img2.webp" title="Coats" />
@@ -96,7 +96,7 @@ function NewArrivals() {
       <p
         data-scroll
         data-scroll-speed="-4"
-        className="absolute left-0 top-0 z-10 mt-10 w-1/5 p-8 text-2xl"
+        className="absolute left-0 top-0 z-10 mt-10 hidden w-1/5 p-8 text-2xl xl:block"
       >
         Each season, we bring you the latest pieces that redefine style and
         elegance. Our New Arrivals collection is a carefully curated selection

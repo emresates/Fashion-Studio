@@ -37,8 +37,8 @@ function Navbar() {
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 2, delay: 5 }}
-      className={`fixed z-50 h-10 w-full text-white transition-all ease-in md:h-20 ${
-        clicked ? "top-0 " : "-top-10 md:-top-20"
+      className={`fixed z-50 h-60 w-full text-white transition-all ease-in md:h-20 ${
+        clicked ? "top-0 " : "-top-60 md:-top-20"
       }`}
     >
       <motion.div
@@ -57,7 +57,7 @@ function Navbar() {
         >
           Menu
         </div>
-        <motion.div className="flex w-full items-center justify-around text-sm uppercase sm:text-xl">
+        <motion.div className="flex h-full w-full flex-col items-center justify-around uppercase text-xl md:flex-row">
           <span
             className="transition-all hover:scale-110 active:scale-90"
             onClick={() => handleScroll("#hero")}
