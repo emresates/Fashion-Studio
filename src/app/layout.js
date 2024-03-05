@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         className={`${inter.className} overflow-x-hidden bg-white text-black dark:bg-black dark:text-white`}
       >
         <main>{children}</main>
+        <GoogleAnalytics gaId="G-LNSXYYMKFQ" />
       </body>
     </html>
   );
